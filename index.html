@@ -2,14 +2,154 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>MOONWARK ORIGIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 MOONWARK ORIGIN</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+line-height:1.6;
+}
+
+header{
+padding:20px;
+position:sticky;
+top:0;
+background:#000;
+border-bottom:1px solid #222;
+}
+
+nav{
+display:flex;
+gap:15px;
+overflow-x:auto;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+white-space:nowrap;
+}
+
+.hero{
+min-height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+color:#ccc;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 25px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:15px;
+margin-top:15px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:34px;
+}
+}
+</style>
 </head>
 
 <body>
 
-<h1>2026 MOONWARK ORIGIN</h1>
+<header>
+<nav>
+<a href="#home">HOME</a>
+<a href="#course">코스소개</a>
+<a href="#time">타임테이블</a>
+<a href="#notice">공지사항</a>
+</nav>
+</header>
 
+<section class="hero" id="home">
+<h1>🌙 2026 MOONWARK ORIGIN</h1>
 <p>거창군 · 35km · 2800m+</p>
+
+<a class="btn"
+href="https://moonrivermountain.kr"
+target="_blank">
+참가신청
+</a>
+</section>
+
+<section id="course">
+<h2>코스 소개</h2>
+
+<div class="card">
+거리 : 35km<br>
+누적고도 : 2800m+<br>
+지역 : 거창군<br><br>
+상세 GPX 및 고도표 공개 예정
+</div>
+</section>
+
+<section id="time">
+<h2>타임테이블</h2>
+
+<div class="card">
+10/11<br><br>
+14:00 접수<br>
+18:00 장비검사<br>
+20:00 출발
+</div>
+</section>
+
+<section id="notice">
+<h2>공지사항</h2>
+
+<div class="card">
+참가 신청 일정 공개 예정
+</div>
+
+<div class="card">
+필수 장비 안내 예정
+</div>
+
+<div class="card">
+코스 답사 일정 공개 예정
+</div>
+</section>
 
 </body>
 </html>
